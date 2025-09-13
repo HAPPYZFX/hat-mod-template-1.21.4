@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "hat-mod",
+  "version": "${version}",
+  "name": "Hat Mod",
+  "description": "允许玩家通过/hat命令将手中的物品戴在头上",
+  "authors": [
+    "Your Name"
+  ],
+  "contact": {
+    "homepage": "https://example.com/",
+    "sources": "https://github.com/yourname/hat-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/hat-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.hz.hatmod.HatMod"
+    ],
+    "fabric-datagen": [
+      "com.hz.hatmod.HatModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "hat-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
